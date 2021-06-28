@@ -1,1 +1,1 @@
-[{"name":"MAX","age":15,"student":true},{"name":"Matthew","age":52,"student":true},{"name":"Maryana","age":22,"student":true},{"name":"Anton","age":22,"student":true}]
+[{"name":"MAX","age":15,"student":true,"email":"max@gmail.com","password":"1234567"},{"name":"Matthew","age":23,"student":true,"email":"matvij379@gmail.com","password":"password"},{"name":"Maryana","age":22,"student":true,"email":"meryann@ukr.net","password":"chill222"},{"name":"Anton","age":22,"student":true,"email":"ant22@gmail.com","password":"qwertyui"}]

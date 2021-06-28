@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const { userIsNotExist, validValues } = require('../middlewares/user.middleware');
+const { userIsNotExist, validValues, isEmailBusy } = require('../middlewares/user.middleware');
 
 const { userController } = require('../controllers');
 
@@ -8,7 +8,7 @@ router.get('/', userController.getAllUsers);
 
 router.get('/:userId', userIsNotExist, userController.getUserById);
 
-router.post('/', validValues, userController.createUser);
+router.post('/', validValues, isEmailBusy, userController.createUser);
 
 router.delete('/:userId', userIsNotExist, userController.deleteUserById);
 
